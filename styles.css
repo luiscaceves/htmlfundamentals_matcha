@@ -10,4 +10,10 @@ color: #fff;
 button{
 background-color: #025157;
 color: #fff;
+margin-left: -5px;
+height: 40px;
+}
+form{
+    text-align: center;
+
 }
