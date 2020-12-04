@@ -148,3 +148,17 @@ li {
     width: 120px;
     margin-top: 10px;
   }
+  
+  .fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+  }
+
+  .main {
+    margin-top: 285px;
+    text-align: center;
+  }
+  
