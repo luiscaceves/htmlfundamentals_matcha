@@ -197,6 +197,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
+    height: 100%;
 }
 
 .postwork button{
@@ -209,4 +211,8 @@
   border-bottom-left-radius: 6px;
   border: none;
   padding: 10px; 
+}
+
+.postwork > img{
+  height: 20%;
 }
