@@ -209,7 +209,12 @@ body {
   justify-content: space-around;
 }
 
-.flex-container  button{
+.flex-container .overview {
+  flex: 2;
+  padding-right: 100px;
+}
+
+.flex-container .overview  button{
   color: #fff;
   background-color: #025157;
   font-size: 14px;
@@ -220,6 +225,7 @@ body {
   margin-left: 0;
 }
 
+/*
 .flex-container figure{
   flex: 1;
   margin-block-start: 1em;
@@ -228,16 +234,18 @@ body {
   margin-inline-end: 40px;
   margin: 0 0 1rem;
   margin-top: 32px;
-}
+} */
 
-.flex-container img{
+.flex-container .overview img{
   width: 500px;
   max-width: 100%;
+  /*
   vertical-align: middle;
-  border-style: none;  
+  border-style: none;
+  */  
 }
 
-.flex-container h2{
+.flex-container .overview h2{
   color: #025157;
   font-weight: bold;
   font-size: 51px;
@@ -245,7 +253,7 @@ body {
   font-family: "Alegreya", serif;
 }
 
-.flex-container p{
+.flex-container .overview p{
   color: #343434;
   font-size: 18px;
   line-height: 1.5;
@@ -263,16 +271,27 @@ body {
 
 }
 
-.flex-container div{
+.flex-container .carousel {
+  flex: 1;
+  position: unset;
+  /*
   position: relative;
   display: flex;
   background-color: #fff;
   background-size: 100%;
   text-align: center;
   flex-direction: column;
-  
+  */
 }
 
+.flex-container .carousel .card {
+max-width: 370px;
+width: 100%;
+background-color: #fff;
+border-radius: 10px;
+
+}
+/*
 .card{
   flex: 1;
   position: relative;
@@ -280,41 +299,28 @@ body {
   background-size: 25% 50%;
   height: 190%;
 }
+*/
 
-.card h3{
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 30px;
-  margin-bottom: 20px;
-}
 
-.card img{
-  padding: 0px;
+.flex-container .carousel .card img {
   width: 100%;
-  max-width: 100%;
- 
+  max-height: 16vw;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.card-footer{
-  margin-bottom: 20px;
-    background-color: unset;
-    border-top: unset;
+.flex-container .carousel .card figure {
+  margin-top: 0;
 }
 
-.card-footer button{
-  display: block;
-  margin-left: 0;
-  border-radius: 5px;
-  font-size: 13;
-  font-weight: 600;
-  padding: 12px 20px;
-  width: 100%; 
+.flex-container .carousel .card .card-media {
+position: relative;
 }
 
 
-.company{
-  position: relative;
-  bottom: 40px;
+.flex-container .carousel .card .card-media .company{
+  position: absolute;
+  bottom: -20px;
   right: 0px;
   width: 100px;
   height: 100px;
@@ -325,25 +331,62 @@ body {
   align-items: center;
 }
 
-.results{
+.flex-container .carousel .card .card-media .company img {
+  max-width: 75%;
+}
+
+.flex-container .carousel .card .card-media .card-footer {
+  padding: 25px;
+}
+
+.flex-container .carousel .card h4 {
+  color: #025157;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.flex-container .carousel .card h3{
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.flex-container .carousel .card .card-media .results{
   display: flex;
   align-items: center;
   color: #828282;
 }
 
-.results img{
-  vertical-align: middle;
-  border-style: none;
-  width: 26px;
+.flex-container .carousel .card .card-media .results .imga {
+  width: 16px;
   margin-right: 20px;
-  
 }
 
-.results p{
+.flex-container .carousel .card .card-media .results .pp{
   margin-top: 0%;
   color: #8b8b8bcc; 
   
 }
+
+.flex-container .carousel .card .card-media .card-footer{
+    margin-bottom: 20px;
+    background-color: unset;
+    border-top: unset;
+}
+
+.flex-container .carousel .card .card-media .card-footer button{
+  display: block;
+  margin-left: 0;
+  border-radius: 5px;
+  font-size: 13;
+  font-weight: 600;
+  padding: 12px 20px;
+  width: 100%; 
+}
+
 /* Termina clases postwork clase 3 */
 
 .features{
@@ -533,3 +576,169 @@ body {
   text-decoration: none;
 }
 
+  /* Clase 5 */
+
+  @media (max-width: 575px ) {
+    .navbar,
+    .actions {
+      display: none;
+    }
+
+    .main h1 {
+      font-size: 30px;
+    }
+
+    .main {
+      margin-top: 100px;
+    }
+
+
+    .banner > img {
+      width:100%
+    }
+
+    .promo {
+      flex-direction: column;
+      max-width: 90%;
+      margin: 30px auto;
+    }
+
+    .explanatory-video > video {
+      width: 100%;
+    }
+
+    .publish {
+      margin-top: 10px;
+    }
+
+    .publish > h3 {
+      font-size: 25px;
+      line-height: 1.2;
+    }
+
+    .publish > form {
+      flex-direction: column;
+    }
+
+    .publish > form > div {
+      height: 50px;
+      margin-top: 10px;
+    }
+
+    .publish > form > div > input {
+      width: 60%;
+    }
+
+    .publish > form > div > button {
+      padding: 8px;
+    }
+
+    .features {
+      grid-template: repeat(4, 300px) / 1fr;
+      padding-left:0 ;
+      padding-right: 0;
+    }
+
+    .feature-image {
+      display: none;
+    }
+
+    .how-does-it-work .steps {
+      margin-top: 70px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+
+  }
+
+  @media (max-width: 425px ) {
+    .navbar,
+    .actions {
+      display: none;
+    }
+
+    .fixed-header {
+      padding-right: 132px;
+      position: fixed;
+    }
+
+    .main h1 {
+      font-size: 25px;
+      color: chocolate;
+    }
+
+    .main {
+      margin-top: 100px;
+    }
+
+    .banner > img {
+      width:80%
+    }
+
+    .promo {
+      flex-direction: column;
+      max-width: 90%;
+      margin: 30px auto;
+      margin-bottom: 70px;
+    }
+
+
+    .features {
+      grid-template: repeat(4, 300px) / 1fr;
+      padding-left:0 ;
+      padding-right: 0;
+
+    }
+
+    .feature-image {
+      display: none;
+    }
+
+    .carousel .card {
+      display: flex;
+      min-width: 100px;
+      position: relative;
+    }
+
+    .how-does-it-work .steps {
+      margin-top: 70px;
+      display: grid;
+      grid-template-columns: 1fr;
+      
+  }
+
+  }
+
+
+  @media ( min-width: 426px ) and (max-width: 769px ) {
+    .navbar,
+    .actions {
+      display: none;
+    }
+
+    .main h1 {
+      font-size: 45px;
+      color: blue;
+    }
+
+    .main {
+      margin-top: 100px;
+    }
+
+    .banner > img {
+      width:80%
+    }
+
+    .promo {
+      flex-direction: column;
+      max-width: 90%;
+      margin: 30px auto;
+    }
+
+    .how-does-it-work .steps {
+      margin-top: 70px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+    
+  }
