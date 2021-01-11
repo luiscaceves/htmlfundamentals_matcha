@@ -355,6 +355,11 @@
   margin-top: 0;
 }
 
+.success-stories .stories-carousel .card  .results span {
+  color: #8b8b8bcc;
+  text-align: center;
+}
+
 .success-stories .stories-carousel .card .card-footer {
   margin-bottom: 20px;
   background-color: transparent;
@@ -367,6 +372,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
 }
 
 .success-stories .stories-carousel .card .card-circle-everly {
