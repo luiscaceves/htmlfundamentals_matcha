@@ -68,7 +68,6 @@ header > * {
   padding-top: 140px;
 }
 
-
 .header h5 {
     color: #025157;
     font-size: 12px;
@@ -101,4 +100,27 @@ header > * {
     margin-right: 5px;
   }
 
+  .faq {
+    background-color: white;
+    padding-bottom: 120px;
+  }
   
+  .faq h2 {
+    color: #025157;
+    font-family: "Alegreya", serif;
+    margin-bottom: 60px;
+  }
+  
+  .faq .card-header {
+    background-color: white;
+    border-left: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  
+  .faq .card-header h2 > button {
+    color: #025157;
+    font-size: 28px;
+  }
+  
+  .faq .card .card-body a {
+    color: #6abf4b;
+  }
